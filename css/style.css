@@ -163,14 +163,10 @@ padding: 120px 0
 }
 
 .container-advantages {
-
- flex-direction: column;
- align-items: center;
- justify-content: center;   
+ align-items: center;   
  padding-bottom: 120px;
 }
 .advantages-list {
-    width: calc((100% - 72px) / 4); 
     display: flex;
     align-items: center;
     gap: 24px;
@@ -257,10 +253,7 @@ display: flex;
     border-top: none;
     margin-bottom: 8px;
     padding: 32px 16px;
-}
-.container-portfolio {
-padding: 32px 16px;
-border-top: none;
+    border-top: none;    
 }
 
 .portfolio-title {
@@ -290,6 +283,7 @@ border-top: none;
 }
 
 .portfolio-item {
+    margin-bottom: 8px;
     padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 8px;
