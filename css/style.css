@@ -112,19 +112,19 @@ align-items: center;
 
 .hero-background {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .container-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    
+    justify-content: center;  
 }
 
 .hero-title {   
+    max-width: 496px;
     margin: auto;
     font-weight: 700;
     font-size: 56px;
@@ -138,8 +138,9 @@ align-items: center;
     margin-top: 48px;
     background-color: #4d5ae5;
     border-radius: 4px;
-        width: 169px;
+    min-width: 169px;
         height: 56px;
+        border: none;
 }
 
 .button-hero:hover,
@@ -159,6 +160,10 @@ align-items: center;
 /* end: section hero */
 /* < !-- Section our advantages --> */
 
+.section-advant {
+padding: 120px 0
+}
+
 .container-advantages {
   display: flex;
  flex-direction: column;
@@ -167,12 +172,16 @@ align-items: center;
  padding-bottom: 120px;
 }
 
-
-.advantages-title {
-    visibility: hidden;
-    padding-top: 120px;
-    text-align: center;
+.visually-hidden {
+overflow: hidden;
+margin-bottom: 8px;
 }
+
+/* .advantages-title {
+    
+    padding-top: 120px;
+    text-align: center; */
+
 
 .adv-item {
     font-weight: 500;
@@ -201,6 +210,7 @@ align-items: center;
 /* my team section */
 
 .my-team-background {
+    padding:120px 0;
     background: #f4f4fd;
     padding-bottom: 120px;
 }
@@ -221,14 +231,16 @@ display: flex;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-card-backgr {
+    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
 }
 
 .my-team-name {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -245,9 +257,30 @@ display: flex;
     text-align: center;
 }
 
+.border-img-team {
+    border-radius: 0px 0px 4px 4px;
+    padding: 32px 0
+}
+
 /* Portfolio section */
+
+.section-portfolio {
+    border-top: none;
+    margin-bottom: 8px;
+    padding: 32px 16px;
+}
+
+
+.section-portfolio {
+ padding-top: 120px;
+padding-bottom: 120px;   
+}
+
+
+
 .portfolio-title {
     padding-top: 120px;
+    margin-bottom: 72px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -257,6 +290,7 @@ display: flex;
     color: #2e2f42;
 }
 .potfolio-link {
+    row-gap: 48px;
     width: calc(1158px - 2 * 24px) / 3;
     border-bottom: 1px solid #e7e9fc;
     padding-top: 72px;
@@ -304,11 +338,17 @@ display: flex;
 
 .page-footer {
     background-color: #2e2f42;
-    padding: 100px;
+    padding: 100px 0;
 }
-.footer-logo .logo-part {
+.logo-part {
     color: #f4f4fd;
 }
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+
 
 .footer-text {
 margin-top: 16px;
