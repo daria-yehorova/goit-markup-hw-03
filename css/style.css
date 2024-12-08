@@ -3,11 +3,9 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
-
-.img {
+ 
+img {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 ul,
@@ -263,24 +261,22 @@ display: flex;
 }
 
 /* Portfolio section */
+.section-portfolio {
+    border-top: none;
+padding: 32px 16px
+ }
 
 .section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
     border-top: none;
     margin-bottom: 8px;
     padding: 32px 16px;
 }
 
-
-.section-portfolio {
- padding-top: 120px;
-padding-bottom: 120px;   
-}
-
-
-
 .portfolio-title {
+    margin-bottom: 8px;
     padding-top: 120px;
-    margin-bottom: 72px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -300,7 +296,6 @@ padding-bottom: 120px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 24px
     
 }
 
