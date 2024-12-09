@@ -6,8 +6,6 @@ body {
  
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 ul,
@@ -163,14 +161,28 @@ align-items: center;
 
 /* < !-- Section our advantages --> */
 
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
 .section-advant {
 padding: 120px 0;
 }
 
 .advantages-list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 24px;
+}
+.adv-link {
+   width: calc((100% - 72px) / 4); 
 }
 
 .adv-item {
@@ -181,7 +193,6 @@ padding: 120px 0;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-
 .adv-text {
     font-weight: 400;
     font-size: 16px;
@@ -266,11 +277,9 @@ display: flex;
     text-align: center;
     color: #2e2f42;
 }
-.potfolio-link {
+.potfolio-list {
     row-gap: 48px;
     column-gap: 24px;
-    width: calc(100% - 48) / 3;
-    border-bottom: 1px solid #e7e9fc;
     padding-top: 72px;
     padding-bottom: 120px;
     flex-wrap: wrap;
@@ -279,6 +288,10 @@ display: flex;
     align-items: center;
     justify-content: center;
     
+}
+
+.portfolio-link {
+    width: calc(100% - 48) / 3;
 }
 
 .portfolio-item {
@@ -294,8 +307,9 @@ display: flex;
 }
 
 .img-border-portfolio {
+    border: 1px solid #e7e9fc; 
     border-top: none;
-    border: 1px solid #e7e9fc;
+    width: 360px;
     padding: 32px 16px;
 
 }
@@ -308,11 +322,10 @@ display: flex;
 }
 
 /* Footer */
-.container-footer {
- flex-direction: column;
- align-items: center;    
-}
 
+.container-footer {
+ flex-direction: column;  
+}
 
 .page-footer {
     background-color: #2e2f42;
@@ -326,10 +339,8 @@ display: flex;
     margin-bottom: 16px;
 }
 
-
-
 .footer-text {
-margin-top: 16px;
+    margin-top: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
