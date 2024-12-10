@@ -270,7 +270,6 @@ display: flex;
 
 .portfolio-title {
     margin-bottom: 72px;
-    padding-top: 120px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -298,9 +297,6 @@ display: flex;
 
 .portfolio-item {
     margin-bottom: 8px;
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -315,8 +311,7 @@ display: flex;
     padding: 32px 16px;
 
 }
-.portfolio-list {
-    padding-left: 16px;
+.portfolio-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
