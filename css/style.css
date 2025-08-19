@@ -7,6 +7,13 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -17,7 +24,34 @@ button {
     cursor: pointer;
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 /* #region header */
+.header-page .container {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 
 .header-page {}
 
@@ -36,7 +70,16 @@ button {
     color: #2e2f42;
 }
 
-.header-list {}
+.nav-page {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
 
 .header-item {}
 
@@ -54,6 +97,11 @@ button {
 
 .header-address {
     font-style: normal;}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
 
 .header-address-item {}
 
@@ -74,7 +122,14 @@ button {
 /* #region hero */
 
 .hero {
-    background-color: #2e2f42;;
+    background-color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.hero-container {
+    width: 496px;    
+    text-align: center;
 }
 
 .hero-title {
@@ -82,16 +137,21 @@ button {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
+
+    margin-bottom: 48px;
 }
 
 .button-title {
     background-color: #4d5ae5;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #fff;;
+    color: #fff;
+
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 .button-title:hover,
 .button-title:focus {
@@ -101,11 +161,23 @@ button {
 
 /*  #region advantage */
 
-.advantage-title {}
+.advantage {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-.advantage-list {}
+.advantage-title {
 
-.advantage-item {}
+}
+
+.advantage-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantage-item {
+    width: 264px;
+}
 
 .advantage-list-title {
     font-weight: 500;
@@ -113,6 +185,8 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+
+    margin-bottom: 8px;
 }
 
 .advantage-text {
@@ -128,8 +202,11 @@ button {
 
 .team-section {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
-.team-title {
+.team-title {    
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -139,7 +216,11 @@ button {
     text-transform: capitalize;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+
+}
 
 .team-item {
     background-color: #FFFFFF;
@@ -152,6 +233,8 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+
+    margin-top: 32px;
 }
 
 .team-text {
@@ -161,11 +244,15 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+
+    margin-top: 8px;
 }
 /* #endregion team */
 
 /* #region portfolio */
-.portfolio {}
+.portfolio {    
+    padding-top: 120px;
+    padding-bottom: 120px;}
 
 .portfolio-title {
     font-weight: 700;
@@ -175,11 +262,28 @@ button {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+
+
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
 
-.portfolio-list-item {}
+    row-gap: 48px;
+    column-gap: 24px;    margin-top: 72px;
+}
+
+.portfolio-list-item {    
+    width: 360px;}
+
+.portfolio-list-item-cont {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    width: 360px;
+}
 
 .portfolio-list-title {
     font-weight: 500;
@@ -202,6 +306,16 @@ button {
 
 .footer {
     background-color: #2e2f42;
+}
+
+.footer-text-cont {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    margin-left: 0;
+    margin-right: 0;
+    
+    width: 264px;
 }
 
 .footer-logo {
@@ -230,6 +344,8 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+
+    margin-top: 16px;
 }
 
 /* #endregion footer */
